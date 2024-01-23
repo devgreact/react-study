@@ -30,6 +30,8 @@ const LoginPage = lazy(() => import("./pages/members/LoginPage"));
 const LogoutPage = lazy(() => import("./pages/members/LogoutPage"));
 // Form 페이지
 const LazyFormPage = lazy(() => import("./pages/forms/FormPage"));
+// KKO 지도
+const LazyMapPage = lazy(() => import("./pages/map/MapPage"));
 
 const App = () => {
   return (
@@ -192,6 +194,18 @@ const App = () => {
           }
         />
         {/* ---END Form 연습 */}
+
+        {/* ---Start 카카오지도 연습 */}
+        <Route
+          path="/map"
+          element={
+            <Suspense fallback={<Loading />}>
+              <LazyMapPage />
+            </Suspense>
+          }
+        />
+        {/* ---END 카카오지도 연습 */}
+
         <Route path="*" element={<h1>페이지가 없어요</h1>}></Route>
       </Routes>
     </BrowserRouter>
