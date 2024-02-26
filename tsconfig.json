@@ -14,7 +14,8 @@
     "target": "ES2016" /* TypeScript 가 JS 로 변환하는 버전 */,
     "lib": [
       "dom",
-      "dom.Iterable"
+      "dom.Iterable",
+      "ESNext"
     ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
     "jsx": "react-jsx" /* JSX를 처리하는 방식( next.js 에서는 preserve) */,
     // "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */

@@ -1,15 +1,19 @@
-interface Pair<T extends number | string> {
-  first: T;
+interface Profile {
+  skill: string;
+  age: number;
 }
+type Who = "a" | "b" | "c";
+type Heroes = Record<Who, Profile>;
 
-const pair1: Pair<number> = { first: 1 };
-// interface Pair {
-//   first: number;
-// }
-const pair2: Pair<string> = { first: "a" };
-// interface Pair {
-//   first: string;
+// 만들어지는 타입
+// type Heroes = {
+//   a: Profile;
+//   b: Profile;
+//   c: Profile;
 // }
 
-// 제약 조건에 의해 오류로 인식
-const pair3: Pair<boolean> = { first: true };
+var members: Heroes = {
+  a: { skill: "", age: 100 },
+  b: { skill: "", age: 100 },
+  c: { skill: "", age: 100 },
+};
