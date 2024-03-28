@@ -11,3 +11,12 @@
 ### 2. [깃허브](https://github.com/) 생성 `단계별 branch 생성 및 push`
 
 - `react-study` 저장소를 생성하고, private 로 셋팅
+
+### 4. 회사 또는 개인 프로젝트 타입스크립트 버전 생성(권장)
+ - 작업은 js 버전으로 해도 무관
+ - npx create-react-app ./ --template typescript
+ 
+### 5. 작업의 순서
+  5.1. public/www 폴더생성 및 퍼블리싱 후 
+  5.2. react (js 버전)
+  5.3. ts 버전 마이그레이션
