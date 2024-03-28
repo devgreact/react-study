@@ -14,7 +14,7 @@
 
 ### 4. 회사 또는 개인 프로젝트 타입스크립트 버전 생성(권장)
  - 작업은 js 버전으로 해도 무관
- - npx create-react-app ./ --template typescript
+ - `npx create-react-app ./ --template typescript`
  
 ### 5. 작업의 순서
   5.1. public/www 폴더생성 및 퍼블리싱 후 
